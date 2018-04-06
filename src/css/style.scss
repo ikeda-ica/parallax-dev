@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+}
+
+.wrap {
+	background: #444;
+	width: 100%;
+
+	.para_wrap{
+		height: 6000px;
+	}
+
+	.static {
+		position: relative;
+		z-index: 200;
+		background: #444;
+	}
+	@mixin para {
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+
+	.para {
+		width: 100%;
+		overflow: hidden;
+		top: 0;
+		transform: translateY(0);
+
+		&.static {
+			position: relative;
+		}
+
+		&.fix {
+			position: fixed;
+			height: 100vh;
+		}
+
+		&.para_1 {
+			background: url("../../images/bg_para_1.jpg") no-repeat;
+			@include para;
+			z-index: 110;
+		}
+
+		&.para_2 {
+			background: url("../../images/bg_para_2.jpg") no-repeat;
+			@include para;
+			z-index: 120;
+		}
+
+		&.para_3 {
+			background: url("../../images/bg_para_3.jpg") no-repeat;
+			@include para;
+			z-index: 130;
+		}
+
+		&.para_4 {
+			background: url("../../images/bg_para_4.jpg") no-repeat;
+			@include para;
+			z-index: 140;
+		}
+
+		&.para_5 {
+			background: url("../../images/bg_para_5.jpg") no-repeat;
+			@include para;
+			z-index: 150;
+		}
+
+		.para_in {
+			width: 80%;
+			height: 2000px;
+			margin: 0 auto;
+			padding: 100px 0;
+			box-sizing: border-box;
+		}
+
+		.inner_content{
+			height: 100%;
+			background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(0,0,0,1) 100%);
+		}
+	}
+}

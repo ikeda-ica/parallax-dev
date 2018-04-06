@@ -1,0 +1,56 @@
+body {
+  margin: 0; }
+
+.wrap {
+  background: #444;
+  width: 100%; }
+  .wrap .para_wrap {
+    height: 6000px; }
+  .wrap .static {
+    position: relative;
+    z-index: 200;
+    background: #444; }
+  .wrap .para {
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    transform: translateY(0); }
+    .wrap .para.static {
+      position: relative; }
+    .wrap .para.fix {
+      position: fixed;
+      height: 100vh; }
+    .wrap .para.para_1 {
+      background: url(../images/bg_para_1_dist.jpg) no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      z-index: 110; }
+    .wrap .para.para_2 {
+      background: url(../images/bg_para_2_dist.jpg) no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      z-index: 120; }
+    .wrap .para.para_3 {
+      background: url(../images/bg_para_3_dist.jpg) no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      z-index: 130; }
+    .wrap .para.para_4 {
+      background: url(../images/bg_para_4_dist.jpg) no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      z-index: 140; }
+    .wrap .para.para_5 {
+      background: url(../images/bg_para_5_dist.jpg) no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      z-index: 150; }
+    .wrap .para .para_in {
+      width: 80%;
+      height: 2000px;
+      margin: 0 auto;
+      padding: 100px 0;
+      box-sizing: border-box; }
+    .wrap .para .inner_content {
+      height: 100%;
+      background: linear-gradient(to bottom, white 0%, black 100%); }
